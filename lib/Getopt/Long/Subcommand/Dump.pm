@@ -37,6 +37,7 @@ _
         filename => {
             summary => 'Path to the script',
             req => 1,
+            pos => 0,
             schema => 'str*',
         },
         libs => {
@@ -45,7 +46,7 @@ _
         },
     },
 };
-sub dump_getopt_long_script {
+sub dump_getopt_long_subcommand_script {
     require Capture::Tiny;
     require Getopt::Long::Subcommand::Util;
     require UUID::Random;

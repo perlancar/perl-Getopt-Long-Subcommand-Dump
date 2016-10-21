@@ -19,7 +19,7 @@ sub _dump {
     print "# END DUMP $config{-tag}\n";
 }
 
-sub _GetOptions(@) {
+sub _GetOptions {
     _dump({@_});
     $config{-exit_method} eq 'exit' ? exit(0) : die;
 }
