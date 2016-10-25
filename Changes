@@ -1,5 +1,10 @@
 Revision history for Getopt-Long-Subcommand-Dump
 
+0.002   2016-10-26 (PERLANCAR)
+
+	- Dump coderef as sub{"DUMMY"} to avoid problems.
+
+
 0.001   2016-10-21 (PERLANCAR)
 
         - First release.
