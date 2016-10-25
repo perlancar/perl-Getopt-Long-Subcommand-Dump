@@ -15,6 +15,7 @@ our %config;
 
 sub _dump {
     print "# BEGIN DUMP $config{-tag}\n";
+    local $Data::Dmp::OPT_DEPARSE = 0;
     say dmp($_[0]);
     print "# END DUMP $config{-tag}\n";
 }
