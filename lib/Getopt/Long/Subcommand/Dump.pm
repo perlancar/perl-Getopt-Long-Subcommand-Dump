@@ -39,10 +39,14 @@ _
             req => 1,
             pos => 0,
             schema => 'str*',
+            cmdline_aliases => {f=>{}},
         },
         libs => {
+            'x.name.is_plural' => 1,
+            'x.name.singular' => 1,
             summary => 'Libraries to unshift to @INC when running script',
             schema  => ['array*' => of => 'str*'],
+            cmdline_aliases => {I=>{}},
         },
     },
 };
